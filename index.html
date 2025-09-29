@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Simple Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flying Dinosaur</title>
+  <style>
+    body {
+      background: skyblue;
+      overflow: hidden;
+      margin: 0;
+      height: 100vh;
+    }
+    #dino {
+      position: absolute;
+      top: 50px;
+      left: -150px;
+      width: 150px;
+      animation: fly 8s linear infinite;
+    }
+    @keyframes fly {
+      from { left: -150px; top: 50px; }
+      to { left: 100vw; top: 150px; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Simple Page!</h1>
-    <p>This is a small webpage you can open on any device.</p>
-    <button onclick="alert('Hello from your webpage!')">Click me</button>
+  <!-- Replace this image link if you want a different dino -->
+  <img id="dino" src="https://i.ibb.co/6t0hFLf/dinosaur.png" alt="Flying Dinosaur">
 </body>
 </html>
